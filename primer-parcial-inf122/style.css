@@ -1,0 +1,168 @@
+:root {
+    --white: #F1F2F4;
+    --black: #000;
+    --gray: #0C151D;
+    --gray-blue: #171F26;
+    --yellow: #FFE071;
+    --clear-gray: #AFC0E2;
+    --sm: 16px;
+    --md: 22px;
+    --lg: 46px;
+}
+
+body {
+    background-color: var(--gray);
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.main-container {
+    background-color: var(--gray);
+  
+}
+
+.title-container {
+    width: 631px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25% auto 0%;
+    margin-top: 178px;
+    margin-left: 40%;
+    margin-right: 25%;
+}
+
+.t1{
+text-align: left;
+ font-size: var(--lg);
+ color: var(--white);
+ margin:0;
+}
+
+.t2{
+    text-align: left;
+    font-size: var(--md);
+    color: var(--white);
+    margin:0;
+}
+
+.icons{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 35% 0 35%;
+}
+
+.title-container img{
+    align-items: center;
+    width: 192px;
+    height: 192px;
+    margin: 40px;
+}
+
+.icons img{
+    align-items: left;
+    width: 36pxx;
+    height: 36px;
+    margin: 0;
+}
+
+.title {
+    font-size: var(--lg);
+    color: var(--white);
+}
+
+.sub-title {
+    color: var(--clear-gray);
+    font-size: var(--md);
+    padding: 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuirá las tarjetas uniformemente en dos columnas */
+    align-items: stretch;
+    margin: 0 5% 0 5%; /* Reduzco el espacio en los márgenes */
+}
+
+
+.card {
+    background-color: var(--gray-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%; /* Ajusto el ancho relativo */
+    max-width: 362px; /* Establezco un ancho máximo para las tarjetas */
+    height: 226px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.inf{
+    width: 631px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin-top: 0%;
+    margin-left: 548px;
+    margin-right: 549px;
+    color: var(--white);
+    text-align: center;
+    font-size: 22px;
+
+}
+.buttons1{
+    text-align: center;
+}
+
+.buttons2{
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--gray-blue);
+    margin-top: 0%;
+    margin-left: 548px;
+    margin-right: 549px;
+
+}
+
+.btn-primary{
+    background-color: var(--yellow);
+    width: 240px;
+    height: 48px;
+    color: black;
+    border: none;
+    font-size: 22px;
+    margin: 24px;
+
+   
+}
+
+.btn-secondary{
+    background-color: var(--gray-blue);
+    width: 240px;
+    height: 48px;
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin: 24px;
+    
+}
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* En dispositivos más pequeños, ocupa el 100% del ancho */
+        max-width: none; /* Elimino el ancho máximo en dispositivos más pequeños */
+    }
+}
